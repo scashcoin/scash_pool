@@ -90,7 +90,7 @@ Rebuild the coin from the following GitHub repository: https://github.com/egamec
 -  Start the daemon in the RPC mode
 
 ```
-./egamecashd --rpc-bind-port=35001
+./egamecashd --enable-cors=* --enable_blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=35001
 ```
 
 -  Generate the pool wallet using walletd
