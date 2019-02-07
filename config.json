@@ -1,8 +1,8 @@
 {
-    "coin": "eGameCash",
-    "symbol": "EGM",
+    "coin": "Scash",
+    "symbol": "SCSX",
     "coinUnits": 100000000,
-    "coinDifficultyTarget": 240,
+    "coinDifficultyTarget": 120,
 
     "logging": {
         "files": {
@@ -82,7 +82,7 @@
         "interval": 600,
         "maxAddresses": 100,
         "mixin": 0,
-        "transferFee": 20000,
+        "transferFee": 100,
         "minPayment": 10000000,
         "maxTransactionAmount": 5000000000,
         "denomination": 10000000
@@ -111,7 +111,7 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 35001
+        "port": 21001
     },
 
     "wallet": {
