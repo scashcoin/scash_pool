@@ -1,6 +1,6 @@
-eGame Cash pool
+Scash pool
 ====================
-Formerly known as cryptonote-forknote-pool, forked from TurtleCoin and adjusted for eGame Cash coin.
+Formerly known as cryptonote-forknote-pool, forked from TurtleCoin and adjusted for Scash (SCSX) coin.
 
 High performance Node.js (with native C addons) mining pool for Cryptonote based coin.
 
@@ -85,12 +85,12 @@ Usage
 
 #### 1) POOL SETUP
 
-Rebuild the coin from the following GitHub repository: https://github.com/egamecash/egamecash-pool using the instructions in the repository Readme.md file.
+Rebuild the coin from the following GitHub repository: https://github.com/scashcoin/scashcoin-pool using the instructions in the repository Readme.md file.
 
 -  Start the daemon in the RPC mode
 
 ```
-./egamecashd --enable-cors=* --enable_blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=35001
+./scashcoind --enable-cors=* --enable_blockexplorer --rpc-bind-ip=0.0.0.0 --rpc-bind-port=35001
 ```
 
 -  Generate the pool wallet using walletd
@@ -153,13 +153,13 @@ redis-server
 -  Clone the pool repository
 
 ```
-git clone https://github.com/egamecash/egamecash-pool.git egamecash-pool
+git clone https://github.com/scashcoin/scashcoin-pool.git scashcoin-pool
 ```
 
 -  Run the pool NPM update
 
 ```
-cd egamecash-pool
+cd scashcoin-pool
 ```
 
 ```
@@ -179,10 +179,10 @@ sudo node init.js
 Explanation for each field:
 ```javascript
 /* Used for storage in redis so multiple coins can share the same redis instance. */
-"coin": "eGameCash",
+"coin": "scash",
 
 /* Used for front-end display */
-"symbol": "EGM",
+"symbol": "SCSX",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
 "coinUnits": 100000000,
@@ -344,13 +344,13 @@ Explanation for each field:
 /* Coin daemon connection details. */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 35001
+    "port": 21001
 },
 
 /* Wallet daemon connection details. */
 "wallet": {
     "host": "127.0.0.1",
-    "port": 35002,
+    "port": 21002,
     "password": "<replace with rpc password>"
 },
 
